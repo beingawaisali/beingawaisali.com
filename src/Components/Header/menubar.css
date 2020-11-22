@@ -1,0 +1,50 @@
+#menulist-parent {
+    width: 100%;
+    max-height: 100vh;
+    min-height: 85.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    z-index: -1;
+}
+
+#menulist {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 20px 0px;
+    font-size: 2em;
+    font-weight: 1000em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+@media (max-width: 450px) {
+    #menulist-parent {
+        max-height: 100vh;
+        min-height: 90vh;
+    }
+    .menu-items {
+        font-size: 1.8em;
+        margin: 30px 0px;
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 350px) {
+    #menulist-parent {
+        max-height: 100vh;
+        min-height: 80.5vh;
+    }
+}

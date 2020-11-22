@@ -1,0 +1,30 @@
+/* 
+    Colors
+    Grey : #b3d4fc;
+    Sky : #f3f2ef;
+    Brown: #bfabaa;
+    Brown2 : #bfabaa;
+    DBrown: #413231;
+    Red: #e62e3e;
+    DRed: #a61e2d;
+    Dred2: #9f1d29;
+    Pink: #ea7884;
+    Text: #222;
+    Headings: #a5142d;
+*/
+
+
+#body-content {
+    border: 20px solid #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: 10px; */
+}
+
+#profile-picture {
+    width: 130px;
+    border-radius: 50%;
+}
+
