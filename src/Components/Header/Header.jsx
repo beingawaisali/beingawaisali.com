@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './header.css';
 import logo from '../Images/sample-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSun, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import moonIcon from "../Images/icons/moon.png";
 import sunIcon from "../Images/icons/sun.png";
@@ -20,6 +19,7 @@ let Header = (props) => {
 
             <div id="header-left">
                 <div id="logo-container">
+                    {/* Replacethis text when you have a Logo. */}
                     {/* <img src={logo} id="logo" /> */}
                     <h2>Logo Here...</h2>
                 </div>

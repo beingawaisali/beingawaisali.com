@@ -26,5 +26,26 @@
 #profile-picture {
     width: 130px;
     border-radius: 50%;
+    transform: rotate(-20deg);
 }
 
+.heartIcon {
+    font-size: 4.5em;
+    margin-top: 30px;
+    transition: 400ms;
+}
+#section-1:hover .heartIcon{
+    font-size: 5.3em;
+    transition: 750ms;
+    color: #e62e3e;
+}
+
+.mouseIcon {
+    font-size: 3.3em;
+    transition: 600ms;
+}
+#section-1:hover .mouseIcon{
+    margin-top: 50px;
+    font-size: 3.4em;
+    transition: 700ms;
+}
