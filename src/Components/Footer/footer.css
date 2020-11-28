@@ -1,6 +1,40 @@
 #footer-main {
     background-color:#a61e2d;
+}
+#footer-top {
     margin: 0px;
-    padding: 30px;
-    color: #ff6876;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.footer-section h5 {
+    color: white;
+    font-size: 1.3em;
+}
+.footer-links{
+    margin-top: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffdde1;
+}
+.footer-links:hover{
+    color: #ffb0b9;
+}
+.footer-links a {
+    color: #ffdde1;
+    text-decoration: none;
+}
+#footer-bottom {
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    width: 100%;
+    border-top: 1.5px solid #6b101a;
 }

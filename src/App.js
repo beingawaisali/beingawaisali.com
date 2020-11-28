@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer.jsx';
 
 // Libraries
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import {useTransition, animated} from 'react-spring'
+import {useTransition, animated} from 'react-spring';
 
 
 
