@@ -37,12 +37,13 @@ function App() {
       key={key}
       style={props}
     >
-      <MenuBar />
+      <MenuBar hideMenuOnClick={ () => setSwitchMenu(switchMenu == false) }/>
     </animated.div>
   );
 
-  let currentPage = "Home";
 
+  // Add Page Title
+  let currentPage;
 
   return (
     <div className="App" >
