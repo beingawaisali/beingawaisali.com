@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 let Footer = () => {
     return (
@@ -9,21 +10,39 @@ let Footer = () => {
                 <div className="footer-section">
                     <h5>USEFULL LINKS</h5>
                     <ul className="footer-links-parent">
-                        <li className="footer-links">HOME</li>
-                        <li className="footer-links">PROFILE</li>
-                        <li className="footer-links">PORTFOLIO</li>
-                        <li className="footer-links">BLOG</li>
-                        <li className="footer-links">CONTACT</li>
+                        <li className="footer-links">
+                            <Link to="/">HOME</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="/profile">PROFILE</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="/portfolio">PORTFOLIO</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="/blog">BLOG</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="/contact">CONTACT</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h5>SERVICES</h5>
                     <ul>
-                        <li className="footer-links">SERVICES</li>
-                        <li className="footer-links">COLLABORATION</li>
-                        <li className="footer-links">TUTORIALS</li>
-                        <li className="footer-links">TOOLS</li>
-                        <li className="footer-links">CURICULLUM VITEA</li>
+                        <li className="footer-links">
+                            <Link to="/services">SERVICES</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="collaboration">COLLABORATION</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="tutorials">TUTORIALS</Link>
+                        </li>
+                        <li className="footer-links">
+                            <Link to="/tools">TOOLS</Link>
+                        </li>
+                        <li className="footer-links" style={{marginLeft: '-25px'}}>CURICULLUM VITEA</li>
                     </ul>
                 </div>
                 <div className="footer-section">

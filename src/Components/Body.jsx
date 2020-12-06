@@ -11,6 +11,7 @@ import profileImage from './Images/profile-image-1.jpg';
 // Libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faMouse, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { Route, Switch, Link } from "react-router-dom";
 
 // Routes
 
@@ -44,7 +45,8 @@ let component1 = {
     'color': '#222'
 }
 let component2 = {
-    'backgroundColor': '#bfabaa'
+    'backgroundColor': '#bfabaa',
+    'color': '#413231'
 }
 let component3 = {
     'backgroundColor': '#e62e3e',
@@ -82,96 +84,172 @@ let component8 = {
 let Body = () => {
     return (
         <div id="body-content">
-            
-            <SectionComponent 
-                giveStyle={component1}
-                componentTop={ <img src={profileImage} alt="Profile Picture" id="profile-picture"/> }
-                title={ "PROFILE" }
-            />
 
-            <SectionComponent 
-                giveStyle={component2}
-                componentTop={ <div class="lds-heart"><div></div></div>}
-                title="PORTFOLIO"
-            />
-            
-            <SectionComponent
-                giveStyle={component3}
-                title="WELCOME I AM AWAIS ALI AND THIS IS MY ONLINE PORTFOLIO..."
-                titleStyle={title1}
-            />
-            
-            <SectionComponent 
-                giveStyle={component4}
-                componentTop={ <FontAwesomeIcon icon={faMouse} className="mouseIcon"/> }
-                title="MY TOOLS"
-            />
+            <Switch>
 
-            <SectionComponent 
-                giveStyle={component5}
-                componentTop={ <div className="lds-grid">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> }
-                
-                title="COLLABORATION"
-            />
+                {/* Homepage */}
 
-            {/* Tutorials */}
+                <Route exact path="/">
 
-            <ImageSection
-                menuName="TUTORIALS"
-            />
+                    <SectionComponent
+                        giveStyle={component1}
+                        textColor={component1}
+                        componentTop={<img src={profileImage} alt="Profile Picture" id="profile-picture" />}
+                        title={"PROFILE"}
+                        linkTo="/profile"
+                    />
 
-            {/* Social Media */}
+                    <SectionComponent
+                        giveStyle={component2}
+                        textColor={component2}
+                        componentTop={<div class="lds-heart"><div></div></div>}
+                        title="PORTFOLIO"
+                        linkTo="/portfolio"
+                    />
 
-            <SocialMediaSection />
 
-            {/* Services */}
+                    <SectionComponent
+                        giveStyle={component3}
+                        textColor={component3}
+                        title="WELCOME I AM AWAIS ALI AND THIS IS MY ONLINE PORTFOLIO..."
+                        titleStyle={title1}
+                    />
 
-            <SectionComponent
-                giveStyle={component6}
-                componentTop={
-                    <div>
-                    <div className="svg-wrapper">
-                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                      <rect id="shape" height="40" width="150" />
-                      <div id="text">
-                        <span className="spot"></span>
-                      </div>
-                    </svg>
-                  </div>
-                  <h4 id="heading-connect">Connect</h4>
-                  </div>
-                }
-                title="SERVICES"
-            />
+                    <SectionComponent
+                        giveStyle={component4}
+                        textColor={component4}
+                        componentTop={<FontAwesomeIcon icon={faMouse} className="mouseIcon" />}
+                        title="MY TOOLS"
+                        linkTo="/tools"
+                    />
 
-            <SectionComponent
-                giveStyle={component7}
-                componentTop={ <FontAwesomeIcon icon={faHeart} className="heartIcon"/> }
-                title="BLOG"
-            />
+                    <SectionComponent
+                        giveStyle={component5}
+                        textColor={component5}
+                        componentTop={<div className="lds-grid">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>}
+                        title="COLLABORATION"
+                        linkTo="/collaboration"
+                    />
 
-            <SectionComponent
-                giveStyle={component4}
-                componentTop={ <FontAwesomeIcon icon={faPaperPlane} className="mouseIcon"/> }
-                title="CONTACT"
-            />
+                    {/* Tutorials */}
 
-            <SectionComponent
-                giveStyle={component8}
-                title="LET'S CONNECT AND MAKE SOMETHING AWESOME TOGETHER..."
-                titleStyle={title2}
-            />
-            
+                    <ImageSection
+                        menuName="TUTORIALS"
+                        linkTo="tutorials"
+                    />
+
+                    {/* Social Media */}
+
+                    <SocialMediaSection linkTo="/social-media" />
+                    {/* Services */}
+
+                    <SectionComponent
+                        giveStyle={component6}
+                        textColor={component6}
+                        componentTop={
+                            <div>
+                                <div className="svg-wrapper">
+                                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                                        <rect id="shape" height="40" width="150" />
+                                        <div id="text">
+                                            <span className="spot"></span>
+                                        </div>
+                                    </svg>
+                                </div>
+                                <h4 id="heading-connect">Connect</h4>
+                            </div>
+                        }
+                        title="SERVICES"
+                        linkTo="/services"
+                    />
+
+                    <SectionComponent
+                        giveStyle={component7}
+                        textColor={component7}
+                        componentTop={<FontAwesomeIcon icon={faHeart} className="heartIcon" />}
+                        title="BLOG"
+                        linkTo="/blog"
+                    />
+
+                    <SectionComponent
+                        giveStyle={component4}
+                        textColor={component4}
+                        componentTop={<FontAwesomeIcon icon={faPaperPlane} className="mouseIcon" />}
+                        title="CONTACT"
+                        linkTo="/contact"
+                    />
+
+
+                    <SectionComponent
+                        giveStyle={component8}
+                        textColor={component8}
+                        title="LET'S CONNECT AND MAKE SOMETHING AWESOME TOGETHER..."
+                        titleStyle={title2}
+                    />
+
+                </Route>
+
+
+
+                {/* Profile */}
+
+                <Route path="/profile">
+                    <Profile />
+                </Route>
+
+                {/* Blog */}
+                <Route path="/blog">
+                    <Blog />
+                </Route>
+
+                {/* Collaboration */}
+                <Route path="/collaboration">
+                    <Collaborate />
+                </Route>
+
+                {/* Contact */}
+                <Route path="/contact">
+                    <Contact />
+                </Route>
+
+                {/* Services */}
+                <Route path="/services">
+                    <Services />
+                </Route>
+
+                {/* Social Media */}
+                <Route path="/social-media">
+                    <SocialMedia />
+                </Route>
+
+                {/* Tools */}
+                <Route path="/tools">
+                    <Tools />
+                </Route>
+
+                {/* Portfolio */}
+                <Route path="/portfolio">
+                    <Portfolio />
+                </Route>
+
+                {/* Tutorials */}
+                <Route path="/tutorials">
+                    <Tutorials />
+                </Route>
+
+
+            </Switch>
+
         </div>
     )
 }

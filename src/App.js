@@ -12,7 +12,13 @@ import Footer from './Components/Footer/Footer.jsx';
 
 // Libraries
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import {useTransition, animated} from 'react-spring';
+import { useTransition, animated } from 'react-spring';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -27,9 +33,9 @@ function App() {
   });
 
   let menuList = transitions.map(({ item, key, props }) =>
-    item && <animated.div 
-            key={key} 
-            style={props}
+    item && <animated.div
+      key={key}
+      style={props}
     >
       <MenuBar />
     </animated.div>
@@ -37,51 +43,56 @@ function App() {
 
   let currentPage = "Home";
 
+
   return (
     <div className="App" >
 
-      {/* Header */}
+      <Router>
 
-      <Header
-        showMenu={ () => setSwitchMenu( switchMenu == false ? true : false ) } 
-        // Enable MenuIconSwitch !!!
-        hideMenu={ () => setSwitchMenu(false) }
-        showMobileMenu={ () => setSwitchMenu( switchMenu == false ? true : false ) }
-        menuIcon={ switchMenu == false ? faBars : faTimes }
-      />
-      <Breadcrumb />
+        {/* Header */}
 
-      <div id="content-main">
+        <Header
+          showMenu={() => setSwitchMenu(switchMenu == false ? true : false)}
+          // Enable MenuIconSwitch !!!
+          hideMenu={() => setSwitchMenu(false)}
+          showMobileMenu={() => setSwitchMenu(switchMenu == false ? true : false)}
+          menuIcon={switchMenu == false ? faBars : faTimes}
+        />
+        <Breadcrumb />
+
+        <div id="content-main">
+
+          {
+            // switchMenu == true ?  : null
+            menuList
+          }
+
+
+
+          {/* Body */}
+
+          {
+            switchMenu == false ? <h1 id="page-heading">{currentPage}</h1> : null
+          }
+
+          {
+            switchMenu == false ? <Body /> : null
+          }
+
+
+
+          {/* Footer */}
+
+        </div>
+
 
         {
-          // switchMenu == true ?  : null
-          menuList  
+          switchMenu == false ? <Footer /> : null
         }
 
-        
-
-        {/* Body */}
-
-        {
-          switchMenu == false ? <h1 id="page-heading">{currentPage}</h1> : null
-        }
-
-        {
-          switchMenu == false ? <Body /> : null
-        }
+      </Router>
 
 
-
-        {/* Footer */}
-
-      </div>
-      
-
-      {
-        switchMenu == false ? <Footer/> : null
-      }
-
-      
     </div>
   );
 }

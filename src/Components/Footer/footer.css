@@ -30,6 +30,7 @@
 .footer-links a {
     color: #ffdde1;
     text-decoration: none;
+    margin-left: -25px;
 }
 #footer-bottom {
     text-align: center;

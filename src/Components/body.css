@@ -13,6 +13,9 @@
     Headings: #a5142d;
 */
 
+h1, h2, h3, h4{
+  text-transform: uppercase;
+}
 
 #body-content {
     border: 20px solid #f8f8f8;
@@ -34,6 +37,13 @@
     margin-top: 30px;
     transition: 400ms;
 }
+
+@media(max-width: 500px) {
+  .heartIcon{
+    font-size: 3em;
+  }
+}
+
 #section-1:hover .heartIcon{
     font-size: 5.3em;
     transition: 750ms;
