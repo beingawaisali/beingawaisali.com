@@ -42,7 +42,7 @@ let Footer = () => {
                         <li className="footer-links">
                             <Link to="/tools">TOOLS</Link>
                         </li>
-                        <li className="footer-links" style={{marginLeft: '-25px'}}>CURICULLUM VITEA</li>
+                        <li className="footer-links" style={{marginLeft: '-25px', letterSpacing: '1px'}}>CURICULLUM VITEA</li>
                     </ul>
                 </div>
                 <div className="footer-section">

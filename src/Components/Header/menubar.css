@@ -30,7 +30,6 @@
     cursor: pointer;
 }
 
-
 @media (max-width: 450px) {
     #menulist-parent {
         max-height: 100vh;

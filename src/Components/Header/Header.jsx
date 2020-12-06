@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './header.css';
-import logo from '../Images/sample-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from 'react-router-dom';
 
 import moonIcon from "../Images/icons/moon.png";
 import sunIcon from "../Images/icons/sun.png";
@@ -21,7 +21,9 @@ let Header = (props) => {
                 <div id="logo-container">
                     {/* Replacethis text when you have a Logo. */}
                     {/* <img src={logo} id="logo" /> */}
-                    <h2>Logo Here...</h2>
+                    <Link to="/" style={{color: 'black', textDecoration: 'none'}}>
+                        <h2>Logo Here...</h2>
+                    </Link>
                 </div>
 
             </div>

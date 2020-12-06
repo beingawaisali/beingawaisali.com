@@ -31,6 +31,7 @@
     color: #ffdde1;
     text-decoration: none;
     margin-left: -25px;
+    letter-spacing: 1px;
 }
 #footer-bottom {
     text-align: center;
@@ -38,4 +39,7 @@
     color: white;
     width: 100%;
     border-top: 1.5px solid #6b101a;
+}
+#footer-bottom > span {
+    letter-spacing: 2px;
 }

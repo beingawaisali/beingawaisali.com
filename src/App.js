@@ -37,7 +37,7 @@ function App() {
       key={key}
       style={props}
     >
-      <MenuBar hideMenuOnClick={ () => setSwitchMenu(switchMenu == false) }/>
+      <MenuBar hideMenuOnClick={() => setSwitchMenu(switchMenu == false)} />
     </animated.div>
   );
 
@@ -79,7 +79,6 @@ function App() {
           {
             switchMenu == false ? <Body /> : null
           }
-
 
 
           {/* Footer */}

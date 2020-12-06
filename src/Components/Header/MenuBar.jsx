@@ -3,29 +3,34 @@ import './menubar.css';
 import { Link } from "react-router-dom";
 
 let MenuBar = (props) => {
+
+    let style = {
+        'color': 'black'
+    }
+
     return (
         <div id="menulist-parent">
             <div id="menulist">
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/">Home</Link>
+                    <Link to="/" style={style}>Home</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/profile">Profile</Link>
+                    <Link to="/profile" style={style}>Profile</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/portfolio" style={style}>Portfolio</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/tools">Tools</Link>
+                    <Link to="/tools" style={style}>Tools</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/collaboration">Collaboration</Link>
+                    <Link to="/collaboration" style={style}>Collaboration</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/blog" style={style}>Blog</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" style={style}>Contact</Link>
                 </p>
             </div>
         </div>
