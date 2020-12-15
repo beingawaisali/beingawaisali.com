@@ -43,3 +43,10 @@
 #footer-bottom > span {
     letter-spacing: 2px;
 }
+
+@media (max-width: 340px) {
+    #footer-bottom > span {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+}

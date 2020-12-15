@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 
 import moonIcon from "../Images/icons/moon.png";
 import sunIcon from "../Images/icons/sun.png";
+import logo from '../Images/logo.png';
 
 
 let Header = (props) => {
@@ -19,10 +20,10 @@ let Header = (props) => {
 
             <div id="header-left">
                 <div id="logo-container">
-                    {/* Replacethis text when you have a Logo. */}
-                    {/* <img src={logo} id="logo" /> */}
                     <Link to="/" style={{color: 'black', textDecoration: 'none'}}>
-                        <h2>Logo Here...</h2>
+                    {/* Replacethis text when you have a Logo. */}
+                        <img src={logo} id="logo" />
+                        {/* <h2>Logo Here...</h2> */}
                     </Link>
                 </div>
 

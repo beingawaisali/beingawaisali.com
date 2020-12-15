@@ -7,6 +7,7 @@ let Footer = () => {
         <div id="footer-main">
 
             <div id="footer-top">
+                
                 <div className="footer-section">
                     <h5>USEFULL LINKS</h5>
                     <ul className="footer-links-parent">
@@ -27,6 +28,7 @@ let Footer = () => {
                         </li>
                     </ul>
                 </div>
+
                 <div className="footer-section">
                     <h5>SERVICES</h5>
                     <ul>
@@ -45,6 +47,7 @@ let Footer = () => {
                         <li className="footer-links" style={{marginLeft: '-25px', letterSpacing: '1px'}}>CURICULLUM VITEA</li>
                     </ul>
                 </div>
+
                 <div className="footer-section">
                     <h5>SOCIAL MEDIA</h5>
                     <ul>
@@ -68,6 +71,7 @@ let Footer = () => {
                         </li>
                     </ul>
                 </div>
+
             </div>
 
             <div id="footer-bottom">
