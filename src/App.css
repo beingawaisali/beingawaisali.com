@@ -17,7 +17,7 @@ body {
 *::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
- 
+
 /* Handle */
 *::-webkit-scrollbar-thumb {
   background: #888; 
@@ -35,4 +35,8 @@ body {
   font-family: Orator Std;
   color: #e62e3e;
   font-size: 2.2em;
+}
+
+.internal-external-link {
+  color: #e62e3e;
 }
