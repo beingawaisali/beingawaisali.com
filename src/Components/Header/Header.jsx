@@ -73,7 +73,7 @@ let Header = (props) => {
             {/* Switch Mode */}
 
                 <div id="switch-mode">
-                    { !switchMode ? <img src={sunIcon} className="sun" onClick={ () => setSwitchMode(true) }/> : <img src={moonIcon} class="moon" onClick={ () => setSwitchMode(false) } /> }
+                    { !switchMode ? <img src={sunIcon} alt="sun icon" className="sun" onClick={ () => setSwitchMode(true) }/> : <img src={moonIcon} alt="moon icon" class="moon" onClick={ () => setSwitchMode(false) } /> }
                 </div>
 
             </div>

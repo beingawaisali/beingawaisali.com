@@ -9,7 +9,7 @@ let Footer = () => {
             <div id="footer-top">
                 
                 <div className="footer-section">
-                    <h5>USEFULL LINKS</h5>
+                    <h4 className="footer-section-heading">USEFULL LINKS</h4>
                     <ul className="footer-links-parent">
                         <li className="footer-links">
                             <Link to="/">HOME</Link>
@@ -30,7 +30,7 @@ let Footer = () => {
                 </div>
 
                 <div className="footer-section">
-                    <h5>SERVICES</h5>
+                    <h5 className="footer-section-heading">SERVICES</h5>
                     <ul>
                         <li className="footer-links">
                             <Link to="/services">SERVICES</Link>
@@ -49,7 +49,7 @@ let Footer = () => {
                 </div>
 
                 <div className="footer-section">
-                    <h5>SOCIAL MEDIA</h5>
+                    <h6 className="footer-section-heading">SOCIAL MEDIA</h6>
                     <ul>
                         <li className="footer-links">
                             <a href="https://github.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">GITHUB</a>

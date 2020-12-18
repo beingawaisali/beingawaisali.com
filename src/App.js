@@ -72,9 +72,9 @@ function App() {
 
           {/* Body */}
 
-          {
+          {/* {
             switchMenu == false ? <h1 id="page-heading">{currentPage}</h1> : null
-          }
+          } */}
 
           {
             switchMenu == false ? <Body /> : null

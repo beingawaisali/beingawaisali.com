@@ -14,7 +14,7 @@
     padding: 20px;
 }
 
-.footer-section h5 {
+.footer-section-heading {
     color: white;
     font-size: 1.3em;
 }
@@ -50,3 +50,4 @@
         font-size: 15px;
     }
 }
+
