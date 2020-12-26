@@ -6,10 +6,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 70px; */
+    height: 70vh;
+    text-align: center;
 }
-
+.coming-soon-title {
+    font-size: 4em;
+    text-shadow: 2px 2px rgb(223, 1, 1);
+    font-weight: bolder;
+    margin: 0px;
+    padding: 5px;
+}
 .progress-heading-2 {
     font-size: 6em;
     text-shadow: 2px 2px rgb(223, 1, 1);
@@ -55,6 +63,12 @@
     transition: 1000ms;
 }
 
+@media (max-width: 530px) {
+    .coming-soon-title {
+        font-size: 3em;
+    }
+}
+
 @media (max-width: 450px) {
     .progress-heading-2 {
         font-size: 4em;
@@ -62,6 +76,9 @@
     
     .progress-heading-3 {
         font-size: 2em;
+    }
+    .coming-soon-title {
+        font-size: 2.5em;
     }
 }
 @media (max-width: 350px) {
@@ -71,5 +88,8 @@
     
     .progress-heading-3 {
         font-size: 1.7em;
+    }
+    .coming-soon-title {
+        font-size: 1.8em;
     }
 }
