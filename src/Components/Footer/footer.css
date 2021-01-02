@@ -12,11 +12,14 @@
 
 .footer-section {
     padding: 20px;
+    min-height: 230px;
 }
 
 .footer-section-heading {
     color: white;
     font-size: 1.3em;
+    margin: 0px;
+    margin-bottom: 35px;
 }
 .footer-links{
     margin-top: 10px;
@@ -42,6 +45,9 @@
 }
 #footer-bottom > span {
     letter-spacing: 2px;
+}
+.cv{
+    margin-left: 20px;
 }
 
 @media (max-width: 340px) {

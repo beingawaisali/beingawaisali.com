@@ -1,8 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /static/css
-Disallow: /static/js
 Disallow: /static/media
 Disallow: /asset-manifest.json
-Dassalow: /favicon.ico
+Disallow: /favicon.ico
 Disallow: /manifest.json
+
+Sitemap: https://beingawaisali.com/sitemap.xml

@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { Link } from 'react-router-dom';
+import myCV from '../Files/Awais Ali.pdf';
 
 let Footer = () => {
     return (
@@ -44,7 +45,9 @@ let Footer = () => {
                         <li className="footer-links">
                             <Link to="/tools">TOOLS</Link>
                         </li>
-                        <li className="footer-links" style={{marginLeft: '-25px', letterSpacing: '1px'}}>CURICULLUM VITEA</li>
+                        <li className="footer-links">
+                            <a href={myCV} download className="cv">CURICULLUM VITEA</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -67,7 +70,7 @@ let Footer = () => {
                             <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">LINKIEDIN</a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">YOUTUBE</a>
+                            <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow noreffer noopener" target="_blank">YOUTUBE</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +78,7 @@ let Footer = () => {
             </div>
 
             <div id="footer-bottom">
-                <span>COPYRIGHT © 2020 BEINGAWAISALI</span>
+                <span>COPYRIGHT © 2021 BEINGAWAISALI</span>
             </div>
 
         </div>
