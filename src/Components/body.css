@@ -33,19 +33,19 @@ h1, h2, h3, h4{
 }
 
 .heartIcon {
-    font-size: 4.5em;
+    font-size: 4em;
     margin-top: 30px;
     transition: 400ms;
 }
 
 @media(max-width: 500px) {
   .heartIcon{
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 
 #section-1:hover .heartIcon{
-    font-size: 5.3em;
+    font-size: 5em;
     transition: 750ms;
     color: #e62e3e;
 }

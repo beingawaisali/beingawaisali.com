@@ -3,7 +3,6 @@ User-agent: *
 Disallow: /static/css
 Disallow: /static/media
 Disallow: /asset-manifest.json
-Disallow: /favicon.ico
 Disallow: /manifest.json
 
 Sitemap: https://beingawaisali.com/sitemap.xml

@@ -11,7 +11,7 @@ import profileImage from './Images/profile-image-1.jpg';
 // Libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faMouse, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link, Redirect } from "react-router-dom";
 
 // Routes
 
@@ -24,6 +24,7 @@ import Services from './Routes/Services.jsx';
 import SocialMedia from './Routes/SocialMedia.jsx';
 import Tools from './Routes/Tools.jsx';
 import Tutorials from './Routes/Tutorials.jsx';
+import NotFound from './Progress/NotFound.jsx'
 
 /* 
     Colors
@@ -246,6 +247,10 @@ let Body = () => {
                 <Route path="/tutorials">
                     <Tutorials />
                 </Route>
+
+                {/* Page Not Found */}
+                <Route path="/404" component={NotFound} />
+                <Redirect to="/404" />
 
 
             </Switch>
