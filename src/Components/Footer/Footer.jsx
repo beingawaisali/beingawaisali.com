@@ -78,7 +78,7 @@ let Footer = () => {
             </div>
 
             <div id="footer-bottom">
-                <span>COPYRIGHT © 2021 BEINGAWAISALI</span>
+                <span>COPYRIGHT © 2020-2021 BEINGAWAISALI</span>
             </div>
 
         </div>

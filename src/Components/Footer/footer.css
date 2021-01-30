@@ -27,14 +27,16 @@
     cursor: pointer;
     color: #ffdde1;
 }
-.footer-links:hover{
+.footer-links a:hover{
     color: #ffb0b9;
+    transition: 500ms;
 }
 .footer-links a {
     color: #ffdde1;
     text-decoration: none;
     margin-left: -25px;
     letter-spacing: 1px;
+    transition: 500ms;
 }
 #footer-bottom {
     text-align: center;
