@@ -6,7 +6,7 @@ import SocialMediaSection from './SocialMediaSection.jsx';
 
 
 // Images
-import profileImage from './Images/profile-image-1.jpg';
+import profileImage from './Images/profile-image-3.jpg';
 
 // Libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
