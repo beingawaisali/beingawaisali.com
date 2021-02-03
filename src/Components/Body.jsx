@@ -12,6 +12,7 @@ import profileImage from './Images/profile-image-3.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faMouse, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Route, Switch, Link, Redirect } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 // Routes
 
@@ -85,6 +86,10 @@ let component8 = {
 let Body = () => {
     return (
         <div id="body-content">
+
+            <Helmet>
+                <title>BeingAwaisAli - Let Bring Innovations to the Real World</title>
+            </Helmet>
 
             <Switch>
 
