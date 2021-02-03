@@ -1,0 +1,102 @@
+#section-1 {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0px;
+}
+
+@media(max-width: 600px) {
+    #section-1 {
+        width: 100%;
+    }
+}
+
+.componentTitle {
+    /* color: #dfe5f3; */
+    font-size: 1.5em;
+    text-decoration: none;
+    background-image: linear-gradient(#222b40, #222b40),
+      linear-gradient(rgb(34, 34, 34), rgb(34, 34, 34)),
+      linear-gradient(#feb2b2, #feb2b2);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.3s linear, background-position 1.3s linear;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+  
+#section-1:hover .componentTitle{
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
+.component-section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.component-section-lower {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+}
+
+
+.image-section-parent {
+    width: 50%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 5px 0px; */
+    background-image: url(/src/Components/Images/tutorials.png);
+    background-repeat: no-repeat;
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    background-size: cover;
+    background-position: center;
+}
+.image-section {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: hsla(50, 33%, 25%, .30);
+    transition: 500ms;
+}
+.image-section:hover {
+    background-color: hsla(50, 33%, 25%, .50);
+    transition: 500ms;
+}
+.image-section-parent:hover .componentTitle{
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+.linkStyle{
+    text-decoration: none;
+}
+#image-section-text {
+    color: rgb(233, 233, 233);
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #363636;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 152px;
+
+}
+@media (max-width: 600px) {
+.image-section-parent, .image-section {
+    width: 100%
+}
+}
