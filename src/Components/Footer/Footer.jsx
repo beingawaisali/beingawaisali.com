@@ -46,7 +46,7 @@ let Footer = () => {
                             <Link to="/tools">TOOLS</Link>
                         </li>
                         <li className="footer-links">
-                            <a href={myCV} download className="cv">CURICULLUM VITEA</a>
+                            <a href={myCV} download className="cv">CURICULLUM VITAE</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +67,7 @@ let Footer = () => {
                             <a href="https://twitter.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">TWITTER</a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">LINKIEDIN</a>
+                            <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">LINKEDIN</a>
                         </li>
                         <li className="footer-links">
                             <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow noreffer noopener" target="_blank">YOUTUBE</a>

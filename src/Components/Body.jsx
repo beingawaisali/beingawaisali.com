@@ -88,7 +88,7 @@ let Body = () => {
         <div id="body-content">
 
             <Helmet>
-                <title>BeingAwaisAli - Let Bring Innovations to the Real World</title>
+                <title>BeingAwaisAli - Lets Bring Innovations to the Real World</title>
             </Helmet>
 
             <Switch>
