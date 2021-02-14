@@ -34,19 +34,29 @@ let Footer = () => {
                     <h5 className="footer-section-heading">SERVICES</h5>
                     <ul>
                         <li className="footer-links">
-                            <Link to="/services">SERVICES</Link>
+                            <Link to="/services">
+                                <i class="footer-icons fas fa-archive"></i> SERVICES
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="collaboration">COLLABORATION</Link>
+                            <Link to="collaboration">
+                                <i class="footer-icons fas fa-user-friends"></i> COLLABORATION
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="tutorials">TUTORIALS</Link>
+                            <Link to="tutorials">
+                                <i class="footer-icons fas fa-laptop-code"></i> TUTORIALS
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/tools">TOOLS</Link>
+                            <Link to="/tools">
+                                <i class="footer-icons fas fa-tools"></i> TOOLS
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <a href={myCV} download className="cv">CURICULLUM VITAE</a>
+                            <a href={myCV} download className="cv">
+                                <i class="footer-icons fas fa-book"></i> CURICULLUM VITAE
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -55,22 +65,34 @@ let Footer = () => {
                     <h6 className="footer-section-heading">SOCIAL MEDIA</h6>
                     <ul>
                         <li className="footer-links">
-                            <a href="https://github.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">GITHUB</a>
+                            <a href="https://github.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">
+                            <i class="footer-icons fab fa-github"></i> GITHUB
+                            </a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://web.facebook.com/beingawaisali.page" rel="nofollow noreffer noopener" target="_blank">FACEBOOK</a>
+                            <a href="https://web.facebook.com/beingawaisali.page" rel="nofollow noreffer noopener" target="_blank">
+                                <i class="footer-icons fab fa-facebook"></i> FACEBOOK
+                            </a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://www.instagram.com/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">INSTAGRAM</a>
+                            <a href="https://www.instagram.com/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">
+                                <i class="footer-icons fab fa-instagram"></i> INSTAGRAM
+                            </a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://twitter.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">TWITTER</a>
+                            <a href="https://twitter.com/beingawaisali" rel="nofollow noreffer noopener" target="_blank">
+                            <i class="footer-icons fab fa-twitter"></i> TWITTER
+                            </a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">LINKEDIN</a>
+                            <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noreffer noopener" target="_blank">
+                                <i class="footer-icons fab fa-linkedin-in"></i> LINKEDIN
+                            </a>
                         </li>
                         <li className="footer-links">
-                            <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow noreffer noopener" target="_blank">YOUTUBE</a>
+                            <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow noreffer noopener" target="_blank">
+                                <i class="footer-icons fab fa-youtube"></i> YOUTUBE
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +100,7 @@ let Footer = () => {
             </div>
 
             <div id="footer-bottom">
-                <span>COPYRIGHT © 2020-2021 BEINGAWAISALI</span>
+                <span>COPYRIGHT © 2021 BEINGAWAISALI</span>
             </div>
 
         </div>
