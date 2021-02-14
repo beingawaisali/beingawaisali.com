@@ -13,19 +13,29 @@ let Footer = () => {
                     <h4 className="footer-section-heading">USEFULL LINKS</h4>
                     <ul className="footer-links-parent">
                         <li className="footer-links">
-                            <Link to="/">HOME</Link>
+                            <Link to="/">
+                                <i class="footer-icons-1 fas fa-home"></i> HOME
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/profile">PROFILE</Link>
+                            <Link to="/profile">
+                                <i class="footer-icons-1 fas fa-user"></i> PROFILE
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/portfolio">PORTFOLIO</Link>
+                            <Link to="/portfolio">
+                                <i class="footer-icons-1 fas fa-project-diagram"></i> PORTFOLIO
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/blog">BLOG</Link>
+                            <Link to="/blog">
+                            <i class="footer-icons-1 fas fa-blog"></i> BLOG
+                            </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/contact">CONTACT</Link>
+                            <Link to="/contact">
+                                <i class="footer-icons-1 fas fa-phone-alt"></i> CONTACT
+                            </Link>
                         </li>
                     </ul>
                 </div>

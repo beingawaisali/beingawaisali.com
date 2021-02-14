@@ -58,6 +58,13 @@
     width: 25px;
     text-align: center;
 }
+.footer-icons-1 {
+    margin: 0px;
+    padding-left: 0px;
+    width: 25px;
+    text-align: center;
+    font-size: 14px;
+}
 
 @media (max-width: 340px) {
     #footer-bottom > span {
