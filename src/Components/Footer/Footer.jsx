@@ -104,6 +104,11 @@ let Footer = () => {
                                 <i class="footer-icons fab fa-youtube"></i> YOUTUBE
                             </a>
                         </li>
+                        <li className="footer-links">
+                            <a href="https://beingawaisali.medium.com/" rel="nofollow noreffer noopener" target="_blank">
+                                <i class="footer-icons fab fa-medium"></i> MEDIUM
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
