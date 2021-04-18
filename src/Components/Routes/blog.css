@@ -1,0 +1,15 @@
+
+#blog-link {
+    color: #413231;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-decoration: none;
+    background-image: linear-gradient(#222b40, #222b40), linear-gradient(rgb(34, 34, 34), rgb(34, 34, 34)), linear-gradient(#feb2b2, #feb2b2);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.3s linear, background-position 1.3s linear;
+    letter-spacing: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+}

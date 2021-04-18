@@ -63,8 +63,11 @@ let Header = (props) => {
                     <a href="https://www.linkedin.com/in/beingawaisali/" rel="nofollow noopener noreferrer" target="_blank">
                         <i className="social-icons fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow" target="_blank">
+                    {/* <a href="https://www.youtube.com/channel/UCd5MrYwaqO_a_C28Bby-pPg/videos?view_as=subscriber" rel="nofollow" target="_blank">
                         <i className="social-icons fab fa-youtube"></i>
+                    </a> */}
+                    <a href="https://beingawaisali.medium.com/" rel="nofollow" target="_blank">
+                        <i className="social-icons fab fa-medium-m"></i>
                     </a>
 
 

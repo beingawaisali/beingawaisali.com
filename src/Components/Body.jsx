@@ -183,8 +183,10 @@ let Body = () => {
                         giveStyle={component7}
                         textColor={component7}
                         componentTop={<FontAwesomeIcon icon={faHeart} className="heartIcon" />}
-                        title="BLOG"
-                        linkTo="/blog"
+                        // title="BLOG"
+                        // linkTo="/blog"
+                        blogLink="https://blogs.beingawaisali.com"
+                        blogText="BLOG"
                     />
 
                     <SectionComponent
