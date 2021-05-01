@@ -27,7 +27,8 @@ let MenuBar = (props) => {
                     <Link to="/collaboration" style={style}>Collaboration</Link>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
-                    <Link to="/blog" style={style}>Blog</Link>
+                    {/* <Link to="/blog" style={style}>Blog</Link> */}
+                    <a href="http://blogs.beingawaisali.com/" target="_blank" rel="noopener" style={style}>Blogs</a>
                 </p>
                 <p className="menu-items" onClick={props.hideMenuOnClick}>
                     <Link to="/contact" style={style}>Contact</Link>

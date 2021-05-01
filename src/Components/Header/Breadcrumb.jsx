@@ -1,8 +1,8 @@
 import React from 'react';
 import './breadcrumb.css';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-let Breadcrumb = () => {
+let Breadcrumb = (props) => {
 
     let style = {
         "textDecoration": "none"
@@ -12,6 +12,9 @@ let Breadcrumb = () => {
         <div id="breadcrumb">
             <span>
                 <Link to="/" style={style}>Beingawaisali >> </Link>
+            </span>
+            <span>
+                {props.pageName}
             </span>
         </div>
     )

@@ -28,9 +28,10 @@ let Footer = () => {
                             </Link>
                         </li>
                         <li className="footer-links">
-                            <Link to="/blog">
+                            {/* <Link to="/blog">
                             <i class="footer-icons-1 fas fa-blog"></i> BLOG
-                            </Link>
+                            </Link> */}
+                            <a href="http://blogs.beingawaisali.com/" target="_blank" rel="noopener"><i class="footer-icons-1 fas fa-blog"></i> Blogs</a>
                         </li>
                         <li className="footer-links">
                             <Link to="/contact">
