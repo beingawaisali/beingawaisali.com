@@ -40,3 +40,7 @@ body {
 .internal-external-link {
   color: #e62e3e;
 }
+
+.heading-center {
+  text-align: center;
+}
